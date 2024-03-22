@@ -1,9 +1,14 @@
-var ano = 2024;
+<meta carset="UTF=8">
+
+<sript>
+
+   var ano = 2024;
+   var pulaLinha = "<br><br><br>"
    
-   document.write("Leon tem" + (ano - 1977)) + "anos" + "<br>");
-   document.write("Clarie tem" + (ano - 1979 )) + "anos" + "<br>");
-   document.write("Jill tem" + (ano - 1975) + "<anos>")
-   documenrt.write("Chris tem" + (ano - 1972) + "<anos>")
+   document.write("Leon tem" + (ano - 1977)) + "anos" + pulaLinha);
+   document.write("Clarie tem" + (ano - 1979 )) + "anos" + pulaLinha);
+   document.write("Jill tem" + (ano - 1975) + "anos" + pulaLinha)
+   documenrt.write("Chris tem" + (ano - 1972) + "anos" + pulaLinha)
 
    ano = 2025;
 
@@ -26,6 +31,4 @@ var ano = 2024;
 
 
 </script>
-
-
 
