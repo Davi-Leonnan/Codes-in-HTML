@@ -1,0 +1,13 @@
+<meta carset="UTF=8">
+
+<sript>
+   
+   document.write("Leon tem" + (2024 - 1977)) + "anos" + "<br>");
+   document.write("Clarie tem" + (2024 - 1979 )) + "anos" + "<br>");
+   document.write("Jill tem" + (2024 - 1975) + "<anos>")
+   documenrt.write("Chris tem" + (2024 - 1972) + "<anos>")
+
+</script>
+
+
+

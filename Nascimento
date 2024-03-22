@@ -1,0 +1,9 @@
+<meta charset="UTF-8">
+
+<script>
+
+    document.write("Davi nasceu em");
+    document.write("<br>");
+    document.write(2024 - 19);
+
+</script>
