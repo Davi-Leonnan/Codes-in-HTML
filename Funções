@@ -4,19 +4,27 @@
 
    function pulaLinha() {
 
-       document.write("<br>")
-       document.write("<br>")
+       document.write("<br>");
+       document.write("<br>");
    }
+
+   fuction mostra(frase) {
+
+      document.write(frase);
+      pulaLinha();
+
+   }
+
+   mostra("Olá pessoal!")
 
    var ano = 2024;
    
-   document.write("Barry tem" + (ano - 1960)) + "anos");
+   mostra("Barry tem" + (ano - 1960)) + "anos");
 
    pulaLinha();
 
-   document.write("Rebecca tem" + (ano - 1980 )) + "anos");
+   mostra("Rebecca tem" + (ano - 1980 )) + "anos");
 
    pulaLinha();
 
 </script>
-   
