@@ -1,0 +1,22 @@
+<meta carset="UTF=8">
+
+<sript>
+
+   function pulaLinha() {
+
+       document.write("<br>")
+       document.write("<br>")
+   }
+
+   var ano = 2024;
+   
+   document.write("Barry tem" + (ano - 1960)) + "anos");
+
+   pulaLinha();
+
+   document.write("Rebecca tem" + (ano - 1980 )) + "anos");
+
+   pulaLinha();
+
+</script>
+   
