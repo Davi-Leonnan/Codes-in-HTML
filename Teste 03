@@ -1,0 +1,54 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var janeiro = 12000;
+    var fevereiro = 10500;
+    var março = 14000;
+    var abril = 11000;
+    var maio = 14500;
+    var junho = 16000;
+    var julho = 13250;
+    var agosto = 14750;
+    var setembro = 16000;
+    var outubro = 12500;
+    var novembro = 15250;
+    var dezembro = 13000;
+
+    mostra("Média, mediana e moda dos gatos empresariais de 2024");
+    
+    // calculo da média dos valores:
+
+    var media = (janeiro + fevereiro + março + abril + maio + junho + julho + agosto + setembro + outubro + novembro + dezembro) / 12;
+
+    // calculo da media dos valores:
+
+    var valores = [janeiro, fevereiro, março, april, meio, junho, julho, agosto, setembro, outubro, novembro, dezembro];
+
+    valores.sort(fuction(a, b){return a - b});
+
+    fuction calcularMediana(valores) {
+        var meio = Math.floor(valores.length / 2);
+
+        if (valores.lenght % 2 == 0) {
+            return (valores[meio - 1] + valores[meio] / 2);
+
+
+        } else {
+            return valores[meio];
+        }
+    }
+
+    mostra("A média, moda e mediana dos gatos empresariais é " + media + calcularMediana(valores) + " reais");
+
+</script>
+
