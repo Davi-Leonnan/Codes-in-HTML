@@ -46,6 +46,30 @@
         }
     }
 
-    mostra("A média, moda e mediana dos gastos empresariais é " + media + ", " + calcularMediana(valores) + " reais");
+    // Cálculo da moda dos valores:
+    function calcularModa(valores) {
+        var contagem = {};
+        var moda = [];
+        var maxContagem = 0;
+
+        for (var i = 0; i < valores.length; i++) {
+            var valor = valores[i];
+            contagem[valor] = (contagem[valor] || 0) + 1;
+            if (contagem[valor] > maxContagem) {
+                maxContagem = contagem[valor];
+                moda = [valor];
+                
+            } else if (contagem[valor] === maxContagem) {
+                moda.push(valor);
+            }
+        }
+
+        return moda;
+    }
+
+    var moda = calcularModa(valores);
+
+
+    mostra("A média, moda e mediana dos gastos empresariais é " + media + ", " + calcularMediana(valores) + ", " + moda.join(", ")+  " reais");
 
 </script>
