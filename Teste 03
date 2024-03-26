@@ -26,6 +26,8 @@
 
     mostra("Média, mediana e moda dos gastos empresariais de 2024");
 
+    pulaLinha();
+
     // cálculo da média dos valores:
     var media = (janeiro + fevereiro + março + abril + maio + junho + julho + agosto + setembro + outubro + novembro + dezembro) / 12;
 
