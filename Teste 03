@@ -24,31 +24,26 @@
     var novembro = 15250;
     var dezembro = 13000;
 
-    mostra("Média, mediana e moda dos gatos empresariais de 2024");
-    
-    // calculo da média dos valores:
+    mostra("Média, mediana e moda dos gastos empresariais de 2024");
 
+    // cálculo da média dos valores:
     var media = (janeiro + fevereiro + março + abril + maio + junho + julho + agosto + setembro + outubro + novembro + dezembro) / 12;
 
-    // calculo da media dos valores:
+    // cálculo da mediana dos valores:
+    var valores = [janeiro, fevereiro, março, abril, maio, junho, julho, agosto, setembro, outubro, novembro, dezembro];
 
-    var valores = [janeiro, fevereiro, março, april, meio, junho, julho, agosto, setembro, outubro, novembro, dezembro];
+    valores.sort(function(a, b) { return a - b; });
 
-    valores.sort(fuction(a, b){return a - b});
-
-    fuction calcularMediana(valores) {
+    function calcularMediana(valores) {
         var meio = Math.floor(valores.length / 2);
 
-        if (valores.lenght % 2 == 0) {
-            return (valores[meio - 1] + valores[meio] / 2);
-
-
+        if (valores.length % 2 == 0) {
+            return (valores[meio - 1] + valores[meio]) / 2;
         } else {
             return valores[meio];
         }
     }
 
-    mostra("A média, moda e mediana dos gatos empresariais é " + media + calcularMediana(valores) + " reais");
+    mostra("A média, moda e mediana dos gastos empresariais é " + media + ", " + calcularMediana(valores) + " reais");
 
 </script>
-
