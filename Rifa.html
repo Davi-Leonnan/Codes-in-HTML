@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroEscolhido = Math.round(Math.random() * 100);
+    console.log(numeroEscolhido); // Corrigido para corresponder ao nome da variável
+    
+    var numeroSorteado = parseInt(prompt("Digite o seu número sorteado: "));
+    
+    if(numeroSorteado == numeroEscolhido) {
+        mostra("Meus parabéns! Você adquiriu uma deliciosa Exotic Butters!");
+    } else {
+        mostra("Que pena! Se contente apenas com o seu salário.");
+    }
+    
+    
+</script>
