@@ -1,0 +1,43 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio) {
+
+        pincel.fillStyle = 'blue';
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+    
+    // Remove a bolinha de sua posição anterior a qual está presente, assim dando a impressão de movimento.
+
+    function limpaTela() {
+    pincel.clearRect(0, 0, 600, 400);
+    }
+
+    var x = 20;
+
+    // Atualiza a tela por "x" segundos.
+
+    // Observação: O termo "x++" é a mesma coisa que: x = x+1
+
+    function atualizaTela() {
+
+    limpaTela();
+    desenhaCirculo(x, 20, 10);
+    x++;
+    }
+    
+    // Recebe como parâmetro o nome da função que se deseja chamar.
+
+    // Obs: Na variável de tempo, uma unidade equivale a 1 milisegundo.
+
+    setInterval(atualizaTela, 10);
+
+</script>
