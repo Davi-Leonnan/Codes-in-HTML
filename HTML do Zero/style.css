@@ -1,0 +1,17 @@
+/* Tudo adicionado entre as chaves vai ser influenciado no código html exterior. */
+
+body{
+    background-color: gray;
+}
+
+h1 {
+    background-color: orangered;
+}
+
+.odd{
+    color:red
+}
+
+.even{
+    color: blue
+}
