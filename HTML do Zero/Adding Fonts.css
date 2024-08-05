@@ -1,0 +1,19 @@
+/* A função "font-family" permite que você adicione diferentes fontes para as caixas de textos.*/
+
+/* font-size: MUda o tamanho da fonte */
+
+/* font-weight: Destarca o texto */
+
+/* font-style: Deixa o texto em itálico. */
+
+h1{
+    font-family: 'Times New Roman', Times, serif, arial;
+}
+
+p{
+    font-family: "calibri" ;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+
+}
