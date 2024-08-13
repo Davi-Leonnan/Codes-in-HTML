@@ -1,0 +1,24 @@
+/* position: relative; -> Determina a posição de um objeto com base em códigos secundários. */
+/* position: fixed; -> O objeto se mexe junto com rolamento da página, ignorando possiveis textos de fundo. */
+/* position: absolute; -> Quando se tem um objeto dentro de outro, o objeto interno se move sobre o objeto externo de forma independente. */
+/* position: sticky; -> Mesma coisa da função "fixed", a diferença é que o objeto se move com base do rolamento da página. */ 
+/* position: static; -> deixa um obejeto interno estático sobre um objeto externo. */
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(14, 78, 173);
+    position: sticky;
+    top: 0px;
+   
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(223, 23, 56);
+    position: static;
+    top: 50px;
+    left: 50px;
+
+}

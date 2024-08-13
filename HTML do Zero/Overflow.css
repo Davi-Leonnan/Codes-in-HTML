@@ -1,0 +1,15 @@
+/* overflow: hidden -> Todo conteúdo que esteja fora da caixa de texto fica escondido. */
+
+/* overflow: clip;
+    overflow-clip-margin: 5px; -> Executa a mesma função "hidden", porém tem a capacidade de limitar a quantidade de texto fora da caixa de texto. */
+
+/* overflow: scroll; -> Adiciona uma barra de rolamento para que todo o texto seja visivel. */
+
+
+
+div{
+    border:2px solid;
+    height: 75px;
+    overflow: auto;
+    
+}

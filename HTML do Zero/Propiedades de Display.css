@@ -1,0 +1,22 @@
+/* A função div cobre toda a linha de posição o qual o texto está presente. */
+
+/* A função Span cobre somente o espaço em que o texto se encontra. */
+
+/* display: inline; -> Permite que somente a região que o ctexto se encontra fique destarcada. */
+
+div {
+    background-color: rgb(68, 255, 124);
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    visibility: hidden;
+}
+
+span{
+    background-color: rgb(255, 196, 0);
+    width: 100px;
+    height: 100px;
+    display: inline-block
+    ;
+
+}
