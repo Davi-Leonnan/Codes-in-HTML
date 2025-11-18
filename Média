@@ -1,9 +1,0 @@
-<meta charset="UTF-8">
-
-<script>
-
-    document.write("A média das idades é ");
-    document.write("<br>");
-    document.write((10 + 16 + 15 + 15 + 17)/5);
-
-</script>
